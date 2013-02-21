@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# This proc will auto run before siml2tp exit
+# be careful that the 'stdin' 'stdout' and 'stderr' may have redirected
+
+
+# do anything you want
+

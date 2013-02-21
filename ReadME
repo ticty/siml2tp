@@ -1,0 +1,33 @@
+[About SimL2tp]
+SimL2tp is a simplified l2tp client for Linux. You can use it to auth to l2tp
+server, it is convenient for some high schools auth.
+
+[Install]
+make
+sudo make install
+
+[User Configure]
+guide:
+	siml2tp-conf
+
+Manual:
+edit $Home/.siml2tp, uncomment and edit param below:
+    username
+    password
+    host
+    add route
+
+[usage]
+dial:
+	siml2tp [opts]
+disconnect:
+	killall siml2tp
+
+
+*use traceroute of other ways to determin the local route
+*siml2tp will auto run:
+	$Home/.siml2tp/after-connect	--	just after connectted
+	$Home/.siml2tp/before			--	before exit
+ you can modify these two proc as you like
+
+

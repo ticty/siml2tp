@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# this proc will auto run when siml2tp connectted
+# Args:
+# $1	--	  username
+
+
+# do anything you need
+
+echo "user $1 connect success"
+
